@@ -1,6 +1,7 @@
 [![CI](https://github.com/Srtlyan/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)](https://github.com/Srtlyan/yamdb_final/actions/workflows/yamdb_workflow.yaml)
 
 # Приложение YaMDb c REST API
+
 * Приложение YaMDb хранит информацию о произведениях разных:
 \- категорий (Например:Фильмы, Музыка, Книги)
 \- жанров (Например: Рок, Фантастика, Детективы)
