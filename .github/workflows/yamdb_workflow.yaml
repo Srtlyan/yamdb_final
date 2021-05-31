@@ -67,6 +67,10 @@ jobs:
           echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
           echo DB_HOST=${{ secrets.DB_HOST }} >> .env
           echo DB_PORT=${{ secrets.DB_PORT }} >> .env
+          python manage.py migrate auth
+          python manage.py makemigrations api
+          python manage.py migrate api
+          python manage.py migrate
           sudo docker-compose up
   send_message:
     runs-on: ubuntu-latest
