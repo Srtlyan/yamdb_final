@@ -23,3 +23,6 @@
 `docker exec -it <container id> python manage.py createsuperuser` 
 6. Заполните базу данными из файла *fixtures.json*:
  `docker exec -it <container id> python loaddata fixtures.json`
+
+ ## Проект доступен по адресу: 
+http://178.154.213.229/admin/login/
