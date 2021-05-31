@@ -19,3 +19,20 @@ services:
       - db
     env_file:
       - ./.env
+
+  nginx:
+    restart: always
+    image: nginx:1.19.3
+    container_name: nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - static_value:/code/static/
+      - media_value:/code/media/
+  
+volumes:
+  postgres_data:
+  # Добавляем новые тома 
+  static_value:
+  media_value:
